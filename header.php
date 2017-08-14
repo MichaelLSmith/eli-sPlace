@@ -57,6 +57,12 @@
 
 			</div> <!-- /bg-dark -->
 
+			<div class="clear"></div>
+			  <div class="menu-sidebar">
+			   <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Widget") ) : ?>
+			   <?php endif;?>
+			  </div>
+
 			<div class="navigation section no-padding bg-dark">
 
 				<div class="navigation-inner section-inner">
@@ -113,11 +119,7 @@
 
 						} ?>
 					</ul>
-					<div class="clear"></div>
-						<div class="menu-sidebar">
-						 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Widget") ) : ?>
-						 <?php endif;?>
-						</div>
+
 
 						<div class="clear"></div>
 
@@ -143,11 +145,7 @@
 							));
 
 						} ?>
-
-					 <div class="menu-sidebar-mobile">
-					 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Widget") ) : ?>
-					 	<?php endif;?>
-					 </div>
+						<!-- Header widget here too!! -->
 				 </ul>
 				</div> <!-- /navigation-inner -->
 			</div> <!-- /navigation -->
