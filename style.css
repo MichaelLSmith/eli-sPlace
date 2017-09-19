@@ -5,12 +5,16 @@
  Author:       Michael Smith
  Author URI:
  Template:     hemingway
- Version:      0.0.5
+ Version:      1.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  hemingway-child
 */
+
+.video-container {
+  margin-top: 1.5em;
+}
 
 .blog-roll-title {
   display: flex;
@@ -81,9 +85,6 @@
   background-color: #C646C6;
   border: 2px solid #C646C6;
   text-decoration: none;
-}
-.donate-posts {
-
 }
 /* TinyMCE CSS */
 .dropcap {
