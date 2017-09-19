@@ -23,7 +23,11 @@
 			</a>
 
 			<h2 class="post-title post-title-roll"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-		</div> <!-- /featured-media -->
+		</div> <!-- blog-roll-title-->
+
+	<?php else: ?>
+
+			<h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
 	<?php endif; ?>
 
