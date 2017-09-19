@@ -12,7 +12,16 @@ function hemingwayChild_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'hemingwayChild_enqueue_styles' );
 
+add_action('admin_head', 'my_custom_fonts');
 
+function my_custom_fonts() {
+  echo '<style>
+    #mceu_14 .mce-i-button_class:before {
+      font-family: "dashicons";
+      content: "\f119";
+    }
+  </style>';
+}
 
 if ( function_exists('register_sidebar') )
   register_sidebar(array(
@@ -24,6 +33,5 @@ if ( function_exists('register_sidebar') )
     'after_title' => '</h3>',
   )
 );
-
 
 ?>
